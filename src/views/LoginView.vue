@@ -64,27 +64,21 @@ export default {
 <style scoped>
 /* 1. ESTILO GENERAL Y CENTRADO */
 .page-background {
-    /* Ocupa toda la pantalla */
     height: 100vh;
     width: 100vw;
-    /* Fondo muy claro, similar al de la imagen */
     background-color: #f7f9fd;
-    /* Centra el contenido vertical y horizontalmente */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Evita el scroll si el contenido es más pequeño que la pantalla */
     overflow: auto;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .login-card-wrapper {
-    /* Para centrar el h1 y p sobre la tarjeta */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Asegura que el contenedor de la tarjeta no se pegue al borde */
     max-width: 400px;
     width: 100%;
 }
