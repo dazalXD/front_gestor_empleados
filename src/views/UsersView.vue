@@ -146,7 +146,6 @@ export default {
             }
         },
         formatDate(dateStr) {
-            // Mantenemos esta función si la necesitas, aunque la quitamos de la tabla en el ejemplo.
             const date = new Date(dateStr)
             return date.toLocaleDateString() + ' ' + date.toLocaleTimeString()
         },
@@ -188,7 +187,7 @@ export default {
                         start_work: this.form.workTimeStart,
                         end_work: this.form.workTimeEnd
                     })
-
+                    this.fetchUsers() // Refresca la lista de usuarios
                     alert('Usuario actualizado con éxito', response.data)
                     this.cleanFormulary()
                     this.isEditing = false;
