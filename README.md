@@ -42,3 +42,9 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### ✨ Autor
+
+Desarrollado por Dazz 🧠
+
+nota: si se descarga junto con el front ejecutar primero el back y luego el front
