@@ -50,7 +50,7 @@ export default {
                 localStorage.setItem('token', response.data.token)
                 localStorage.setItem('user', JSON.stringify(response.data.user))
                 console.log(response)
-                this.$router.push({ name: 'home' })
+                this.$router.push({ name: 'users' })
             } catch (error) {
                 this.errorMessage = error.response?.data?.message
                 alert(error.message || 'Error al iniciar sesión')

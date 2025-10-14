@@ -2,7 +2,7 @@
   <div class="not-found">
     <h1>404 - Página no encontrada 😕</h1>
     <p>La ruta <strong>{{ $route.path }}</strong> no existe.</p>
-    <router-link to="/home" class="btn">Volver al inicio</router-link>
+    <router-link to="/users" class="btn">Volver al inicio</router-link>
   </div>
 </template>
 

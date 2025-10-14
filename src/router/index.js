@@ -2,12 +2,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 import LoginView from '../views/LoginView.vue'
 import UsersView from '../views/UsersView.vue'
 import NotFoundView from '../views/NotFoundView.vue'
+import DocsView from '../views/DocumentsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'login', component: LoginView },
-    { path: '/home', name: 'home', component: UsersView },
+    { path: '/users', name: 'users', component: UsersView },
+    { path: '/docs', name: 'docs', component: DocsView },
     { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFoundView }
   ],
 })
@@ -21,7 +23,7 @@ router.beforeEach((to, from, next) => {
   }
   // Si SÍ hay token y quiere ir al login → redirigir al home
   else if (token && to.name === 'login') {
-    next({ name: 'home' })
+    next({ name: 'users' })
   }
   // En cualquier otro caso → dejar pasar
   else {

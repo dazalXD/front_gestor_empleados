@@ -5,19 +5,15 @@
         </div>
 
         <nav class="nav">
-            <router-link to="/home" exact class="nav-item" active-class="active">
-                <span class="icon">🏠</span>
-                <span class="text">Inicio</span>
+
+            <router-link to="/users" class="nav-item" active-class="active">
+                <span class="icon">👥</span>
+                <span class="text">Usuarios</span>
             </router-link>
 
             <router-link to="/docs" class="nav-item" active-class="active">
                 <span class="icon">📁</span>
                 <span class="text">Documentos</span>
-            </router-link>
-
-            <router-link to="/users" class="nav-item" active-class="active">
-                <span class="icon">👥</span>
-                <span class="text">Usuarios</span>
             </router-link>
 
             <router-link to="/settings" class="nav-item" active-class="active">
