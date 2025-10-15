@@ -44,7 +44,7 @@
                                 </div>
 
                                 <button type="submit" class="btn-primary" @click="createUser">
-                                    <i class="icon-plus"></i> Añadir Usuario
+                                    <i class="icon-plus"></i> {{ isEditing ? 'Guardar Cambios' : 'Añadir Usuario' }}
                                 </button>
                                 <button v-if="isEditing" type="button" class="btn-primary" @click="cancelEdit"
                                     style="background: #6c757d; margin-top: 10px;">

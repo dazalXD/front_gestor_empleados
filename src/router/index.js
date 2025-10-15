@@ -3,6 +3,8 @@ import LoginView from '../views/LoginView.vue'
 import UsersView from '../views/UsersView.vue'
 import NotFoundView from '../views/NotFoundView.vue'
 import DocsView from '../views/DocumentsView.vue'
+import PermisionsView from '../views/PermissionsView.vue'
+import PermissionsView from '../views/PermissionsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,6 +12,7 @@ const router = createRouter({
     { path: '/', name: 'login', component: LoginView },
     { path: '/users', name: 'users', component: UsersView },
     { path: '/docs', name: 'docs', component: DocsView },
+    { path: '/permisions', name: 'permisions', component:  PermissionsView},
     { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFoundView }
   ],
 })

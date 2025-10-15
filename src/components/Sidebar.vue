@@ -20,6 +20,11 @@
                 <span class="icon">⚙️</span>
                 <span class="text">Configuración</span>
             </router-link>
+
+            <router-link to="/permisions" class="nav-item" active-class="active">
+                <span class="icon">🔐</span>
+                <span class="text">Permisos</span>
+            </router-link>
         </nav>
 
         <div class="profile">
