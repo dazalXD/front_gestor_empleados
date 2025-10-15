@@ -53,7 +53,7 @@ export default {
                 this.$router.push({ name: 'users' })
             } catch (error) {
                 this.errorMessage = error.response?.data?.message
-                alert(error.message || 'Error al iniciar sesión')
+                alert(error.message || `${this.errorMessage}:  Error al iniciar sesión`)
                 console.error(error)
             }
         }
